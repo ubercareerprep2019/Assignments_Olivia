@@ -1,16 +1,14 @@
+package Part2;
+
+import org.junit.jupiter.api.Test;
 import static org.junit.Assert.*;
-import org.junit.Test;
+
 import java.util.ArrayList;
-import javafx.util.Pair; 
-import jdk.internal.jline.internal.TestAccessible;
+import javafx.util.Pair;
 
-//ublic static Array<Pair<Integer>> pairsThatEqualSum(Array<Integer> inputArray, int targetSum) {
+public class EqualSumTest {
 
-public class permutationTest {
-
-    /** Performs a few arbitrary tests to check if isStringPermutation method is correct */
-
-    @Test 
+    @Test
     public void testSimple() {
         ArrayList<Integer> sample = new ArrayList();
         for (int i = 0; i < 10; i++) {

@@ -1,42 +1,46 @@
+package Part2;
+
+import org.junit.jupiter.api.Test;
 import static org.junit.Assert.*;
-import org.junit.Test;
 
-import jdk.internal.jline.internal.TestAccessible;
+class PermutationTest {
 
-public class permutationTest {
+    @Test
+    void testSanity() {
+        String sanity = "hello";
+        assertTrue(Permutation.isStringPermutation(sanity, sanity));
+    }
 
-    /** Performs a few arbitrary tests to check if isStringPermutation method is correct */
-
-    @Test 
-    public void testSimple() {
+    @Test
+    void testSimple() {
         String s1 = "hello";
         String s2 = "elloh";
         assertTrue(Permutation.isStringPermutation(s1, s2));
     }
 
-    @Test 
-    public void testEmpty() {
+    @Test
+    void testEmpty() {
         String s1 = "hello";
         String s2 = "";
         assertFalse(Permutation.isStringPermutation(s1, s2));
     }
 
-    @Test 
-    public void testLength() {
+    @Test
+    void testLength() {
         String s1 = "hello";
         String s2 = "helloo";
         assertFalse(Permutation.isStringPermutation(s1, s2));
-    }    
+    }
 
     @Test
-    public void testForward() {
+    void testForward() {
         String s1 = "hello";
         String s2 = "lohel";
         assertTrue(Permutation.isStringPermutation(s1, s2));
     }
 
     @Test
-    public void testBackward() {
+    void testBackward() {
         String s1 = "hello";
         String s2 = "lohel";
         assertTrue(Permutation.isStringPermutation(s1, s2));
