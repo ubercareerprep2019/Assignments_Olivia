@@ -5,6 +5,8 @@ package Part4;//package Assignment-1.part3;
  * @author Olivia Lee
  */
 
+import java.util.Stack;
+
 class SinglyLinkedList<T> {
 
     private LLNode _front;
@@ -151,14 +153,35 @@ class SinglyLinkedList<T> {
         return false;
     }
 
+//    0 1 1 0 ; even stop at index 1
+    // 0 1 0 ; odd stop at index 1
+
+    // checks if linked list is a palindrome using stack library (flexible for generics)
     boolean isPalindrome() {
-        LLNode front = _front;
-        LLNode back = _end;
-
-        if (size() % 2 == 0) {
-
+        if (size() == 0) {
+            throw new Error("Linked list is empty");
         }
 
-        return false;
+        int middle = size()/2;
+        LLNode<T> node = _front.next();
+        Stack<T> stack = new Stack();
+
+        while (middle != 0) {
+            stack.push(node.value());
+            node = node.next();
+            middle--;
+        }
+        if (size()%2 != 0) { //odd
+            stack.pop();
+        }
+        while (node != null) {
+            T val = stack.pop();
+            if (val != node.value()) {
+                return false;
+            }
+            node = node.next();
+        }
+
+        return true;
     }
 }

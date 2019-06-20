@@ -100,4 +100,19 @@ public class SinglyLinkedListTest {
         boolean cycle = testLL.hasCycle();
         assertTrue(cycle);
     }
+
+    @Test
+    void testPalindrome() {
+        initBasic();
+        boolean notPalindrome = testLL.isPalindrome();
+        assertFalse("linked list is a palindrome", notPalindrome);
+
+        initBasic();
+        for (int i = 4; i > 0; i--) {
+            SinglyLinkedList.LLNode<Integer> add = new SinglyLinkedList.LLNode<>(i);
+            testLL.pushBack(add);
+        }
+        boolean isPalindrome = testLL.isPalindrome();
+        assertTrue("linked list is not a palindrome", isPalindrome);
+    }
 }
