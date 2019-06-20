@@ -1,7 +1,7 @@
 package Part5;
 import java.util.ArrayList;
 
-/* Class implementation of a Towers of Part5.Hanoi.
+/** Class implementation of a Towers of Part5.Hanoi.
  * Includes basic methods: moveDisk, disksAtRod, numberOfRods.
  *
  * Towers of Part5.Hanoi is a mathematical puzzle where we have three rods and n disks. The objective

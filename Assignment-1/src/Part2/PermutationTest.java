@@ -3,6 +3,12 @@ package Part2;
 import org.junit.jupiter.api.Test;
 import static org.junit.Assert.*;
 
+/** PermutationTest class used as both unit and integration test
+ *  for homework part2 package on string permutations
+ *
+ * @author olivialee
+ * **/
+
 class PermutationTest {
 
     @Test

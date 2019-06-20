@@ -3,6 +3,12 @@ package Part3;
 import org.junit.jupiter.api.Test;
 import static org.junit.Assert.*;
 
+/** QueueTest class used as both unit and integration test
+ *  for homework part3 package on Queue data structure implementation
+ *
+ * @author olivialee
+ * **/
+
 public class QueueTest {
 
     Queue _test;

@@ -1,5 +1,11 @@
 package Part2;
 
+/** The permutation class contains isStringPermutation function, which
+ *  takes two strings and returns true if one string is a permutation of
+ *  the other, false otherwise.
+ *
+ * @author olivialee
+ * */
 class Permutation {
     static boolean isStringPermutation(String s1, String s2) {
         //base case:

@@ -3,6 +3,12 @@ package Part3;
 import org.junit.jupiter.api.Test;
 import static org.junit.Assert.*;
 
+/** PushDownStackTest class used as both unit and integration test
+ *  for homework part3 package on Stack data structure implementation
+ *
+ * @author olivialee
+ * **/
+
 class PushDownStackTest {
 
     PushDownStack testStack;

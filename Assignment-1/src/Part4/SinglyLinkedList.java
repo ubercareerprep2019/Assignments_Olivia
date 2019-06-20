@@ -1,5 +1,6 @@
-package Part4;//package Assignment-1.part3;
-/* Class implementation of a Singly linked list from scratch.
+package Part4;
+
+/** Class implementation of a Singly linked list from scratch.
  * Includes basic methods: push, pop, top, isEmpty, and min.
  *
  * @author Olivia Lee

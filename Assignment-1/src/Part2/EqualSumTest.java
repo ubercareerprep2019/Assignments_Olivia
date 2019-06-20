@@ -6,6 +6,12 @@ import static org.junit.Assert.*;
 import java.util.ArrayList;
 import javafx.util.Pair;
 
+/** EqualSumTest class used as both unit and integration test
+ *  for homework part2 package on array manipulation
+ *
+ * @author olivialee
+ * **/
+
 public class EqualSumTest {
 
     @Test

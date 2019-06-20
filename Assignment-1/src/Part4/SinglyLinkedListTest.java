@@ -3,6 +3,12 @@ package Part4;
 import org.junit.jupiter.api.Test;
 import static org.junit.Assert.*;
 
+/** SinglyLinkedListTest class used as both unit and integration test
+ *  for homework part3 package on linked list data structure implementation
+ *
+ * @author olivialee
+ * **/
+
 public class SinglyLinkedListTest {
 
     private SinglyLinkedList<Integer> testLL;

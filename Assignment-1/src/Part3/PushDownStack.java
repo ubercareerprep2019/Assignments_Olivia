@@ -2,7 +2,7 @@ package Part3;
 
 import java.util.ArrayList;
 
-/* Class implementation of a push down stack from scratch.
+/** Class implementation of a push down stack from scratch.
  * Includes basic methods: push, pop, top, isEmpty, and min.
  *
  * @author Olivia Lee

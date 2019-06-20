@@ -1,4 +1,5 @@
-package Part3;/* Class implementation of a Part3.Queue using the push down stack from Part 3A.
+package Part3;
+/** Class implementation of a Part3.Queue using the push down stack from Part 3A.
  * First in, first out data structure.
  * Includes basic methods: enqueue, dequeue, and init.
  *
