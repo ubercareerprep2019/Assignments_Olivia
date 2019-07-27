@@ -1,6 +1,7 @@
 # Uber-Career-Prep-Homework-Olivia
 
-Collection of Homework Assignments curated through Uber Career Prep
+Collection of Homework Assignments curated through Uber Career Prep.
+Built using IntelliJ IDEA.
 
 ## Assignment-1
 1. Environment setup 
